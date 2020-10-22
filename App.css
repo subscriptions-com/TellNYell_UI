@@ -1,0 +1,106 @@
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.App-logo {
+  position: fixed;
+  margin: auto ;
+  left: 600px;
+  top:100px;
+  display: inline-block;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+
+
+}
+.home-icon{
+  height: 40vh;
+  width: 11vw;
+
+}
+
+.login-button {
+  position: absolute;
+  top: 60px;
+  right: 350px;
+}
+.signin-button {
+  position: absolute;
+  top: 60px;
+  right: 240px;
+}
+.signout-button {
+  position: absolute;
+  top: 60px;
+  right: 120px;
+}
+.backcolor{
+  background:aliceblue;
+  width: auto;
+  height:1400px;
+
+}
+.search{
+  display: inline-block;
+  margin-left: 500px;
+  width: 600px;
+  margin-bottom:800px;
+}
+
+.loginform{
+  margin:100px;
+  width:325px;
+}
+.logIn{
+  display: inline-block;
+  margin-left: 500px;
+
+  width:350px;
+  margin-bottom:800px;
+  margin-top:120px ;
+}
+.signUp{
+  display: inline-block;
+  margin-left: 650px;
+  margin-bottom:800px;
+  margin-top:60px ;
+
+}
+
+
+.logo_screens {
+  position: fixed;
+  margin-top: -200px;
+  margin-right: -100px;
+
+}
