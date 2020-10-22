@@ -42,9 +42,9 @@ onChange=e=>{
 
         return (
             <div className="signUp">
-                <h2>SIGN UP AS BO</h2>
+                <h4>SIGN UP AS BO</h4>
                 <table>
-                    <tr><td><TextField  className="loginform" label="First Name" variant="outlined" defaultValue={this.state.first_name}
+                    <tr><td><TextField  className="loginform" label="First Name"  defaultValue={this.state.first_name}
 
                     onChange={event => {
                               const { value } = event.target;
@@ -53,18 +53,18 @@ onChange=e=>{
                             }}/>
 
                             </td></tr>
-                    <tr><td><TextField  className="loginform" label="Last Name" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform" label="Last Name"   onChange={event => {
                         const { value } = event.target;
                         console.log("last_name",value)
                         this.setState({ last_name: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="E mail" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform"  label="E mail"    onChange={event => {
                         const { value } = event.target;
                         console.log("email_id",value)
                         this.setState({ email_id: value });
                     }} /></td></tr>
                     <tr><td><TextField  className="loginform" type="password"
-                                        label="Password" variant="outlined"
+                                        label="Password"
                                         inputProps={{
                                             endAdornment: (
                                                 <InputAdornment position="end">
@@ -81,38 +81,39 @@ onChange=e=>{
                         console.log("password",value)
                         this.setState({ password: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform" type="password" label="Confirm Password" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform" type="password" label="Confirm Password"    onChange={event => {
                         const { value } = event.target;
                         console.log("confirm_password",value)
                         this.setState({ confirm_password: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="DOB" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform"  label="DOB"    onChange={event => {
                         const { value } = event.target;
                         console.log("dateOfBirth",value)
                         this.setState({ dateOfBirth: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="EIN Number" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform"  label="EIN Number"    onChange={event => {
                         const { value } = event.target;
                         console.log("tin",value)
                         this.setState({ tin: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="business_contact" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform"  label="Business Contact"    onChange={event => {
                         const { value } = event.target;
                         console.log("business_contact",value)
                         this.setState({ business_contact: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="type_of_business" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform"  label="Type Of Business"    onChange={event => {
                         const { value } = event.target;
                         console.log("type_of_business",value)
                         this.setState({ type_of_business: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="business_address" variant="outlined"   onChange={event => {
+                    <tr><td><TextField  className="loginform"  label="Business Address"    onChange={event => {
                         const { value } = event.target;
                         console.log("business_address",value)
                         this.setState({ business_address: value });
                     }}/></td></tr>
-                    <tr><td><Button variant="contained" color="primary" onClick={this.onSubmit}>
-                        SIGNUP AS BO
+                    <tr></tr>
+                    <tr><td className="submit"><Button  variant="contained" color="primary" onClick={this.onSubmit}>
+                        SUBMIT
                     </Button></td></tr>
 
                 </table>
