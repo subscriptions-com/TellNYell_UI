@@ -10,16 +10,16 @@ class LogInForm extends Component{
         return (
 
             <div className="logIn">
-                <h2>LOG IN</h2>
+                <h4>LOG IN</h4>
 
                 <table>
-                   <tr><td><TextField  className="loginform"  label="Email" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform"  label="Password" variant="outlined" /></td></tr>
-                   <tr><Button variant="contained" color="primary">
+                   <tr><td><TextField  className="loginform"  label="Email"  /></td></tr>
+                   <tr><td><TextField  className="loginform"  label="Password"  /></td></tr>
+                    <div className="margin-dist"><tr><Button variant="contained" color="primary">
                        LOGIN
                    </Button><Button  color="primary">
                        Forgot Password
-                   </Button></tr>
+                    </Button></tr></div>
 
 
                </table>

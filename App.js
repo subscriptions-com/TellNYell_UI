@@ -3,13 +3,15 @@ import './App.css';
 import Homescreen from "./HomePage/Homescreen";
 import SignUpForm from "./HomePage/SignUpForm";
 import LogInForm from "./HomePage/LogInForm";
-
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import LoginAsBo from "./HomePage/LoginAsBo";
 import SignUpAsBo from "./HomePage/SignUpAsBo";
+
 function App() {
+
+
   return (
-    <div className="backcolor">
+    <div className="background_img" >
         <Router>
             <div>
                 <Switch>

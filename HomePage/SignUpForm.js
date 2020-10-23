@@ -11,30 +11,30 @@ class SignUpForm extends Component{
 
         return (
             <div className="signUp">
-                <h2>SIGN UP</h2>
+                <h4>SIGN UP</h4>
                <table>
-                   <tr><td><TextField  className="loginform" label="First Name" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform" label="Last Name" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform"  label="E mail" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform"  label="Password" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform"  label="Confirm Password" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform"  label="PhoneNumber" variant="outlined" /></td></tr>
-                   <tr><td><TextField  className="loginform"  label="Zipcode" variant="outlined" /></td></tr>
-                   <tr><td><MaterialUIPickers className="loginform"/></td></tr>
-                   <tr><td><TextField className="loginform"
-                                  label="Privacy Policy"
-                                   placeholder="Privacy Policy"
-                       multiline
-                       rows={25}
-                       rowsMax={15}
-                   /></td></tr>
-                   <tr><td><Checkbox/><label>Agree</label>
-                       <Checkbox/><label>Disagree</label></td></tr>
+                   <tr><td><b><TextField  className="loginform" label="First Name"  /></b></td></tr>
+                   <tr><td><TextField  className="loginform" label="Last Name" /></td></tr>
+                   <tr><td><TextField  className="loginform"  label="E mail"  /></td></tr>
+                   <tr><td><TextField  className="loginform"  label="Password" /></td></tr>
+                   <tr><td><TextField  className="loginform"  label="Confirm Password"  /></td></tr>
+                   <tr><td><TextField  className="loginform"  label="PhoneNumber"  /></td></tr>
+                   <tr><td><TextField  className="loginform"  label="Zipcode" /></td></tr>
+                   <tr><td><TextField type="date" className="loginform"/></td></tr>
+                   {/*<tr><td><TextField className="loginform"*/}
+                   {/*               label="Privacy Policy"*/}
+                   {/*                placeholder="Privacy Policy"*/}
+                   {/*    multiline*/}
+                   {/*    rows={25}*/}
+                   {/*    rowsMax={15}*/}
+                   {/*/></td></tr>*/}
+                   {/*<tr><td><Checkbox/><label>Agree</label>*/}
+                   {/*    <Checkbox/><label>Disagree</label></td></tr>*/}
                    <td>
                    </td>
-                   <tr><td><Button variant="contained" color="primary">
-                       SIGNUP
-                   </Button></td></tr>
+                   <tr> <div className="margin-dist"><td><Button variant="contained" color="primary">
+                       SUBMIT
+                   </Button></td></div></tr>
 
 
 

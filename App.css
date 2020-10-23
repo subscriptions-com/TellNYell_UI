@@ -79,7 +79,9 @@
 
 .loginform{
   margin:100px;
+
   width:325px;
+  fontSize:350;
 }
 .logIn{
   display: inline-block;
@@ -103,7 +105,40 @@
   margin-top: -200px;
   margin-right: -100px;
 
+
 }
 .submit{
   margin-top: 280px;
 }
+.background_img {
+  background-image: url('https://image.shutterstock.com/image-photo/luxury-wide-table-top-wood-600w-623934428.jpg');
+  background-repeat: no-repeat,repeat;
+  background-position:center ;
+  background-size:cover ;
+  padding-top: 0px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  border-radius: 50px;
+  box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75) ;
+}
+  .background_img h1,p{
+background-color: bisque;
+    padding:50px;
+  }
+  .textSize{
+
+  fontSize:50
+
+  }
+.margin-dist {
+
+  margin-top: 15px;
+
+}
+
+
+
+
+

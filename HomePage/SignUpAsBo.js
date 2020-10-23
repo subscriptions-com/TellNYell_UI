@@ -5,10 +5,11 @@ import axios from 'axios';
 import {InputAdornment, IconButton } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
+
+
 class SignUpAsBo extends Component{
 
-constructor(props)
-{
+constructor(props) {
 super(props)
 this.state={
 first_name:'',
@@ -20,8 +21,7 @@ dateOfBirth:'',
 tin:'',
 business_contact:'',
 type_of_business:'',
-business_address:''
-}
+business_address:''}
 }
 
 onChange=e=>{
@@ -44,7 +44,11 @@ onChange=e=>{
             <div className="signUp">
                 <h4>SIGN UP AS BO</h4>
                 <table>
-                    <tr><td><TextField  className="loginform" label="First Name"  defaultValue={this.state.first_name}
+                    <tr><td><TextField  className="loginform"
+                                        label="First Name"
+                                        defaultValue={this.state.first_name}
+                                        inputProps={{ 'aria-black': 'description' }
+                                        }
 
                     onChange={event => {
                               const { value } = event.target;
@@ -86,11 +90,11 @@ onChange=e=>{
                         console.log("confirm_password",value)
                         this.setState({ confirm_password: value });
                     }}/></td></tr>
-                    <tr><td><TextField  className="loginform"  label="DOB"    onChange={event => {
+                    <div className="margin-dist"><td>DOB</td><tr><td><TextField  type="date" className="loginform"    onChange={event => {
                         const { value } = event.target;
-                        console.log("dateOfBirth",value)
-                        this.setState({ dateOfBirth: value });
-                    }}/></td></tr>
+                        const displayDate =value.toString().split("-").reverse().join("-");
+                        this.setState({ dateOfBirth: displayDate });
+                    }}/></td></tr></div>
                     <tr><td><TextField  className="loginform"  label="EIN Number"    onChange={event => {
                         const { value } = event.target;
                         console.log("tin",value)
@@ -112,9 +116,9 @@ onChange=e=>{
                         this.setState({ business_address: value });
                     }}/></td></tr>
                     <tr></tr>
-                    <tr><td className="submit"><Button  variant="contained" color="primary" onClick={this.onSubmit}>
+                    <div className="margin-dist"><tr><td className="submit"><Button  variant="contained" color="primary" onClick={this.onSubmit}>
                         SUBMIT
-                    </Button></td></tr>
+                    </Button></td></tr></div>
 
                 </table>
 

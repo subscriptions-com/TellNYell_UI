@@ -1,12 +1,11 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-//import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
 const StyledMenu = withStyles({
     paper: {
         border: '1px solid #d3d4d5',
@@ -53,7 +52,11 @@ export default function LogIn() {
         <Router>
             <div>
 
-                <Button variant="primary" size="lg" active>
+                <Button  aria-controls="customized-menu"
+                         aria-haspopup="true"
+                         variant="outlined"
+                         color="secondary"
+                         onClick={handleClick}>
                     LogIn
                 </Button>{' '}
                 <StyledMenu

@@ -10,16 +10,16 @@ class LoginAsBo extends Component{
         return (
 
             <div className="logIn">
-                <h2>LOG IN AS BO</h2>
+                <h4>LOG IN AS BO</h4>
 
 
-                    <tr><td><TextField  className="loginform"  label="E mail" variant="outlined" /></td></tr>
-                    <tr><td><TextField  className="loginform"  label="Password" variant="outlined" /></td></tr>
-                    <tr><Button variant="contained" color="primary">
+                    <tr><td><TextField  className="loginform"  label="E mail" /></td></tr>
+                    <tr><td><TextField  className="loginform"  label="Password"  /></td></tr>
+                <div className="margin-dist"><tr><Button variant="contained" color="primary">
                         LOGIN AS BO
                     </Button><Button  color="primary">
                         Forgot Password
-                    </Button></tr>
+                </Button></tr></div>
 
 
 
