@@ -12,14 +12,14 @@ function App() {
 
   return (
     <div className="background_img" >
-        <Router>
+        <Router basename={'/tellnyell'}>
             <div>
                 <Switch>
-                    <Route exact path='/tellnyell/home' component={Homescreen} />
-                    <Route exact path='/tellnyell/login/user' component={LogInForm} />
-                    <Route exact path='/tellnyell/signUp/user' component={SignUpForm} />
-                    <Route exact path='/tellnyell/signUp/BO' component={SignUpAsBo} />
-                    <Route exact path='/tellnyell/login/BO' component={LoginAsBo} />
+                    <Route exact path='/home' component={Homescreen} />
+                    <Route exact path='/login/user' component={LogInForm} />
+                    <Route exact path='/signUp/user' component={SignUpForm} />
+                    <Route exact path='/signUp/BO' component={SignUpAsBo} />
+                    <Route exact path='/login/BO' component={LoginAsBo} />
 
 
 
